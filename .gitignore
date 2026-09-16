@@ -1,0 +1,18 @@
+# Ignore everything by default
+*
+
+# Allow directories to be scanned
+!*/
+
+# Whitelist .ipynb and .py files
+!*.ipynb
+!*.py
+
+# Keep .gitignore and README (if you add one)
+!.gitignore
+!README*
+!readme*
+
+# Ignore Jupyter checkpoint files
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
