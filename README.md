@@ -1,7 +1,7 @@
 # Mesh Particle Analysis
 
 > **For Teich Lab members:** This package is intended for members of the
-> [Wellesley College Soft Matter](https://sites.google.com/wellesley.edu/teichlab)
+> [Wellesley College Soft Matter Lab](https://sites.google.com/wellesley.edu/teichlab)
 
 `mesh-particle-analysis` provides reusable Python tools for analyzing deformable
 mesh particles generated with HOOMD-blue and stored in GSD trajectories. The
