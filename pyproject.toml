@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mesh-particle-analysis"
+version = "0.1.0"
+description = "Analysis tools for deformable mesh particles in HOOMD-blue trajectories"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Mesh project contributors" },
+]
+dependencies = [
+    "alphashape",
+    "freud-analysis",
+    "matplotlib",
+    "networkx",
+    "numpy",
+    "shapely",
+]
+
+[project.optional-dependencies]
+io = ["gsd"]
+test = [
+    "gsd",
+    "pytest",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mesh_particle_analysis"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+

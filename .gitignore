@@ -1,18 +1,34 @@
-# Ignore everything by default
-*
+# Large simulation / trajectory files (GitHub rejects files > 100MB)
+*.gsd
 
-# Allow directories to be scanned
-!*/
+# macOS metadata
+.DS_Store
 
-# Whitelist .ipynb and .py files
-!*.ipynb
-!*.py
+# VS Code settings
+.vscode/
 
-# Keep .gitignore and README (if you add one)
-!.gitignore
-!README*
-!readme*
-
-# Ignore Jupyter checkpoint files
+# Jupyter Notebook checkpoints
 .ipynb_checkpoints/
-*/.ipynb_checkpoints/*
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Test and build artifacts
+.pytest_cache/
+dist/
+build/
+*.egg-info/
+
+# Local Python environments
+.venv/
+venv/
+
+# Local research notebooks and legacy exports
+/Test.ipynb
+/calculate_IQ.ipynb
+/mesh_data_analysis.ipynb
+/mesh_to_share.ipynb
+/networkx.ipynb
+/mesh_analysis.py
+/mesh_simulation.py
